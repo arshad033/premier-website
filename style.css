@@ -1,0 +1,473 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Section 1 */
+.header {
+    border: 2px solid black;
+    width: 100%;
+    height: 8vw;
+    background-color: aqua;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 15% 20% 25% 15%;
+    grid-template-rows: 100%;
+    margin-top: 3vh;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.nav-part1,
+.nav-part2,
+.nav-part3,
+.nav-part4,
+.nav-part5 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.nav-part5 {
+    border-right: none;
+}
+
+.left-nav {
+    line-height: 90%;
+}
+
+.nav-part1 h1 {
+    font-size: 3.5vw;
+}
+
+.nav-part1 i {
+    font-size: 1vw;
+}
+
+.left-nav p {
+    font-size: 1.2vw;
+    margin-left: 6.5vw;
+}
+
+/* Section 2 */
+.video-section {
+    width: 100vw;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 80vw;
+    height: 85%;
+    object-fit: cover;
+    position: relative;
+}
+
+.video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    height: 100%;
+    padding: 0vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#overlay1 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2%;
+}
+
+#overlay1 h1 {
+    font-size: 3.5vw;
+}
+
+#overlay1 h2 {
+    height: 5vw;
+    aspect-ratio: 1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 4px solid white; */
+    font-size: 2vw;
+
+}
+
+#overlay2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-top: 2px solid white;
+    padding-top: 2%;
+}
+
+#overlay2 h4 {
+    font-size: 1.2vw;
+}
+
+.arrow i {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+/* Section 3 */
+.img-scroller {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    scroll-behavior: smooth;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#container img {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 4.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.alphabate {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+
+.alphabate h4 {
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 1%;
+    border-bottom: 2px solid black;
+}
+
+.alphabate h6 {
+    font-size: 1.2vw;
+    margin: 2% 0.9%;
+    font-style: italic;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.alphabate h6:hover {
+    border: 1px solid black;
+
+}
+
+/* @media (max-width:900px) {
+.header {
+border: 2px solid black;
+width: 100%;
+height: 10vh;
+background-color: aqua;
+display: grid;
+align-items: center;
+grid-template-columns: 25% 15% 20% 25% 15%;
+grid-template-rows: 100%;
+margin-top: 4vh;
+}
+.header a {
+text-decoration: none;
+color: black;
+font-size: 1.8vw;
+font-weight: 600;
+} 
+.left-nav p {
+font-size: 1.8vw;
+margin-left: 8.5vw;
+}
+
+#overlay {
+position: absolute;
+bottom: 0vh;
+width: 80%;
+color: white;
+height: 40%;
+padding: 0vw 4vw;
+}
+#overlay2 h4 {
+font-size: 1.8vw;
+}
+.arrow i {
+font-size: 2.4vw;
+font-weight: 600;
+}
+.img-scroller {
+width: 100%;
+height: 25vh;
+white-space: nowrap;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+} */
+.Section-4,.Section-10{
+    width: 100%;
+    height: 55vw;
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+.left-section-4 {
+    width: 90%;
+    height: 95%;
+}
+
+.left-section-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.left-section-4 h1 {
+    font-weight: 900;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.right-section-4 {
+    width: 80%;
+    height: 70%;
+    justify-self: center;
+}
+
+.right-section-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.para {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 45% 55%;
+}
+#first-para {
+    font-size: 1.8vw;
+}
+#second-para {
+    font-size: 1.2vw;
+}
+
+/* Section-5 */
+.Section-5 {
+    width: 100%;
+    height: 50vw;
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 45% 55%;
+    justify-items: center;
+}
+
+.left-section-5 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+    align-items: center;
+    justify-content: end;
+}
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.left-section-5 img {
+    width: 75%;
+    height: 75%; 
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.section-5-para{
+    width: 100%;
+     margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.left-section-5 p {
+    width: 80%;
+    height: 40%;
+    font-size: 1.2vw;
+}
+
+@keyframes anime1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.right-section-5 img {
+    width: 50vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Section-6 */
+.Section-6,.Section-9{
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section-6-video-container{
+    width: 80VW;
+    height: 40VW;
+    position: relative;
+}
+.Section-6-video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Section-6-video-container p{
+    width: 2vw;
+    height: 2vw;
+    font-size: 1vw;
+    position: absolute;
+    top: 5%;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 95%;
+}
+
+/* Section 7 */
+.Section-7{
+width: 100vw;
+height: 55vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#heading{
+width: 100%;
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#heading h1{
+font-size: 3vw;
+text-transform: uppercase;
+
+}
+#section-7-part-1
+{
+width: 90vw;
+height: 20%;
+display: flex;
+border-top: 2px solid black;
+align-items: center;
+}
+.Section-7 h2
+{
+font-size: 2vw;
+}
+.Section-7 h6
+{
+font-size: 1.2vw;
+}
+.Section-7 p
+{
+font-size: 1vw;
+}
+.section-7-part-1-left{
+width: 45vw;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100%;
+align-items: center;
+
+}
+.section-7-part-1-left-second img{
+width: 10vw;
+height: 10vw;
+border-radius: 50%;
+object-fit: cover;
+object-position: top;
+}
